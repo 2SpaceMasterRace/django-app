@@ -47,8 +47,7 @@ The configuration files alone do not activate Travis CI or Coveralls.
    `us-west-2`. Keep credentials out of Git and do not expose them to fork PRs.
 4. Push this configuration and open a pull request. Verify that Travis starts
    automatically and reports its result on the PR. In GitHub branch protection
-   for `main`, require `continuous-integration/travis-ci` to pass before merging;
-   confirm the check name against the first actual Travis build.
+   for `main`, require `Travis CI - Pull Request` to pass before merging.
 5. Merge a passing PR to `main`. Travis runs Black, Flake8, Django checks, tests
    under coverage.py, and Coveralls reporting. After those succeed, its
    Elastic Beanstalk provider deploys the application and waits for completion.
