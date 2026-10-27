@@ -27,7 +27,7 @@ deploy:
   secret_access_key: "$AWS_SECRET_ACCESS_KEY"
   region: us-west-2
   app: django-app
-  env: django-app-env
+  env: django-app-ci-env
   bucket: elasticbeanstalk-us-west-2-793452510245
   bucket_path: travis
   wait_until_deployed: true
