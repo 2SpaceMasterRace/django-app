@@ -1,6 +1,6 @@
 # django-app
 
-[![Build Status](https://app.travis-ci.com/2SpaceMasterRace/django-app.svg?branch=main)](https://app.travis-ci.com/github/2SpaceMasterRace/django-app)
+[![Build Status](https://api.travis-ci.com/2SpaceMasterRace/django-app.svg?branch=main)](https://app.travis-ci.com/github/2SpaceMasterRace/django-app)
 [![Coverage Status](https://coveralls.io/repos/github/2SpaceMasterRace/django-app/badge.svg?branch=main)](https://coveralls.io/github/2SpaceMasterRace/django-app?branch=main)
 
 Django polls application with Travis CI checks and AWS Elastic Beanstalk deployment.
