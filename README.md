@@ -9,7 +9,7 @@ Django polls application with Travis CI checks and AWS Elastic Beanstalk deploym
 
 - GitHub: https://github.com/2SpaceMasterRace/django-app
 - Travis dashboard: https://app.travis-ci.com/github/2SpaceMasterRace/django-app
-- Deployed app: http://django-app--env.us-west-2.elasticbeanstalk.com/polls/
+- Deployed app: http://django-app-ci--env.us-west-2.elasticbeanstalk.com/polls/
 - Coverage: https://coveralls.io/github/2SpaceMasterRace/django-app
 
 ## Run checks locally
