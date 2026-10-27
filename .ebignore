@@ -5,3 +5,9 @@
 *.py[cod]
 .env
 staticfiles/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.ruff_cache/
+.ebextensions~/
