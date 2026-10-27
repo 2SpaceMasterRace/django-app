@@ -1,0 +1,33 @@
+language: python
+dist: noble
+python:
+  - "3.14"
+
+cache: pip
+
+install:
+  - python -m pip install uv
+  - uv sync --frozen
+
+script:
+  - uv run black --check .
+  - uv run flake8 .
+  - uv run python djangotutorial/manage.py check
+  - uv run coverage run djangotutorial/manage.py test polls
+  - uv run coverage report --show-missing
+  - uv run coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  edge: true
+  access_key_id: "$AWS_ACCESS_KEY_ID"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  region: us-west-2
+  app: django-app
+  env: django-app-env
+  bucket: elasticbeanstalk-us-west-2-793452510245
+  bucket_path: travis
+  wait_until_deployed: true
+  on:
+    repo: 2SpaceMasterRace/django-app
+    branch: main

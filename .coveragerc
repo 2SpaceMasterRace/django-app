@@ -1,0 +1,11 @@
+[run]
+branch = True
+source = djangotutorial/polls,djangotutorial/sweproject
+omit =
+    */migrations/*
+    */tests.py
+    */asgi.py
+    */wsgi.py
+
+[report]
+show_missing = True
